@@ -1,0 +1,30 @@
+.page-footer {
+    position: relative;
+    padding-top: 1rem;
+    text-align: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #cccccc;
+    }
+}
+
+// @media (min-width: $tablet-width) {
+// 	.page-footer {
+// 		width: $tablet-width;
+// 		padding: 20px 60px;
+// 	}
+// }
+
+
+// @media (min-width: $desktop-width) {
+// 	.page-footer {
+// 		width: $desktop-width;
+// 		padding: 40px 120px;
+// 	}
+// }

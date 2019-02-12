@@ -1,0 +1,19 @@
+.container {
+    width: $s-width;
+	padding: 1.2em;
+    margin: 0 auto;
+}
+
+@media (min-width: $m-width) {
+	.container {
+		width: $m-width;
+        padding: 1.2em;
+    }
+}
+
+@media (min-width: $l-width) {
+	.container {
+		width: $l-width;
+        padding: 1.4em;
+    }
+}

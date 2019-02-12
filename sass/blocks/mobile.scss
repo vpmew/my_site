@@ -1,0 +1,42 @@
+.mobile {
+    overflow: hidden;
+}
+
+.mobile__icon {
+    position: absolute;
+    left: 2%;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+	background-size: 75% 75%;
+	background-position: 50% 50%;
+}
+
+.mobile:hover {
+    .mobile__icon {
+        animation: ring-a-ding-ding-baby .5s linear;
+    }
+}
+
+@keyframes ring-a-ding-ding-baby {
+    0% {
+        transform: rotate(10deg);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    40% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(-10deg);
+    }
+    80% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}

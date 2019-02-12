@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Верстальщик Артём</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Артём Плотников</title>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/module-layout.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
+
 <body>
-	<header class="page-header">
-		<h1 class="page-header__header">Верстальщик Артём</h1>
-	</header>
-	<main class="main-content">
-		<section class="main-content__about-me  about-me">
-			<img class="about-me__photo" src="#" alt="">
-			<p class="about-me__text">Привет, меня зовут Артём. Я простой деревенский парень из российской провинции. Учу фронтенд, но также стараюсь развиваться во всех аспектах и направлениях IT и компьютерной грамотности: читаю книги, смотрю лекции, решаю задачи, копаюсь в компьютерном железе. Не знаю, кем в итоге стану, но одного я хочу точно: стать лучше, чем сейчас. Хочу узнавать новые вещи и учиться пользоваться ими. А также работать, получать опыт и общаться с людьми, которые умнее меня.</p>
-			<div class="about-me__contacts contancts">
-				<a class="contacts__link  contacts__link--focused  contacts__telegram" href="#">Telegram</a>
-				<a class="contacts__link  contacts__link--focused  contacts__vk" href="#">VK</a>
-				<a class="contacts__link  contacts__link--focused  contacts__email" href="#">Почта</a>
-				<a class="contacts__link  contacts__link--focused  contacts__mobile" href="#">+7 906 832 22 31</a>
+	<div class="container">
+		<header class="visually-hidden page-header">
+			<h1 class="page-header__title">Верстальщик Артём</h1>
+		</header>
+		<main class="main-content">
+			<section class="main-content__about-me  about-me">
+				<h1 class="visually-hidden about-me__header">Обо мне.</h1>
+				<p class="about-me__title">Привет, меня зовут Артём Плотников.<br>Я — Frontend-разработчик из
+					Оренбурга.</p>
+				<p class="about-me__point">Верстаю сайты</p>
+				<p class="about-me__point">Делаю SPA на React</p>
+			</section>
+			<div class="layout-row">
+				<div class="col-6">
+					<section class="main-content__contacts  contacts">
+						<h1 class="visually-hidden contacts__header">Контакты.</h1>
+						<img class="contacts__photo  photo" src="img/avatar.jpg" alt="Это я">
+						<div class="contacts__link-block">
+							<a class="contacts__link  contacts__telegram" href="tg://resolve?domain=vpmew">Telegram</a>
+							<a class="contacts__link  contacts__email"
+								href="mailto:plotnikovplotnikovplotnikov@yandex.ru">Почта</a>
+							<a class="contacts__link  contacts__github" href="https://github.com/vpmew">Github</a>
+							<a class="contacts__link  contacts__mobile mobile" href="tel:+79068322231"><span
+									class="mobile__icon"></span>+7 906 832 22 31</a>
+						</div>
+					</section>
+				</div>
+				<div class="col-6">
+					<section class="main-content__works  works">
+						<h1 class="visually-hidden works__header">Примеры работ.</h1>
+						<p class="works__title">Примеры работ:</p>
+						<ul class="works__list">
+							<li class="works__item">
+								<a href="#">Приложение на React</a>
+							</li>
+							<li class="works__item">
+								<a href="https://vpmew.github.io/Barbershop/dist/index.html">Адаптивная вёрстка</a>
+							</li>
+						</ul>
+					</section>
+				</div>
 			</div>
-		</section>
-		<section class="main-content__skills  skills">
-			<h2 class="skills__header">Умею:<span class="skills__note-char">*</span></h2>
-			<ul class="skills__list">
-				<li class="skills__item">HTML, CSS, adaptive design, cетки на flexbox и grid</li>
-				<li class="skills__item">JS ES6, DOM</li>
-				<li class="skills__item">Git, Sass / Less, Grunt / Gulp, работа с терминалом</li>
-				<li class="skills__item">React, Redux, Webpack</li>
-				<li class="skills__item">Чтение на русском и английском, самостоятельное обучение</li>
-			</ul>
-			<small class="skills__note-text">*не идеально</small>
-		</section>
-		<section class="main-content__works  works">
-			<h2 class=-works__header">Примеры работ:</h2>
-			<a class="works__item" href="#">
-				<img class="works__image" src="#" alt="">
-			</a>
-			 <a class="works__item" href="#">
-				<img class="works__image" src="#" alt="">
-			</a>
-			<a class="works__item" href="#">
-				<img class="works__image" src="#" alt="">
-			</a>
-			<a class="works__item" href="#">
-				<img class="works__image" src="#" alt="">
-			</a>
-			<a class="works__item" href="#">
-				<img class="works__image" src="#" alt="">
-			</a>
-		</section>
-	</main>
-	<footer class="page-footer">
-		<section class="page-footer__contacts  contancts">
-			<a class="contacts__link  contacts__link--focused  contacts__telegram" href="#">Telegram</a>
-			<a class="contacts__link  contacts__link--focused  contacts__vk" href="#">VK</a>
-			<a class="contacts__link  contacts__link--focused  contacts__email" href="#">Почта</a>
-			<a class="contacts__link  contacts__link--focused  contacts__mobile" href="#">+7 906 832 22 31</a>
-		</section>
-		<section class="page-footer__copyright">
-			<b class="copyright__name">Сделал сам</b>
-			<time class="copyright__date" datetime=""></time>  <!-- тут жсом будет вставляться атрибут и содержимое -->
-		</section>
-	</footer>
+		</main>
+		<footer class="page-footer">
+			<span class="page-footer__username">Артём Плотников</span>,
+			<time class="page-footer__date" datetime="">2019</time>.
+			<span class="page-footer__copyright">Никакие права не защищены.</span>
+		</footer>
+	</div>
 </body>
+
 </html>

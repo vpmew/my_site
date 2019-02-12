@@ -1,0 +1,58 @@
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html, body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: $color-1;
+	color: $color-2;
+	font-family: "IBM Plex Mono", Arial, sans-serif;
+	min-width: $s-width
+}
+
+html {
+	font-size: $font-size-s;
+	line-height: $line-height-s;
+}
+
+@media (min-width: $m-width) {
+	html {
+		font-size: $font-size-m;
+		line-height: $line-height-m;
+	}
+}
+
+@media (min-width: $l-width) {
+	html {
+		font-size: $font-size-l;
+		line-height: $line-height-l;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.content-box-component {
+	box-sizing: content-box;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}

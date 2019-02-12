@@ -1,0 +1,43 @@
+.about-me {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: flex-start;
+	margin-bottom: 1rem;
+}
+
+@media (min-width: $l-width) {
+	.about-me {
+		margin-bottom: .5rem;
+	}
+}
+
+.about-me__title {
+	margin: 0;
+	margin-top: .5rem;
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+	line-height: 1.8rem;
+}
+
+@media (min-width: $m-width) {
+	.about-me__title {
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: $l-width) {
+	.about-me__title {
+		margin-top: 0;
+	}
+}
+
+.about-me__point {
+	margin: 0;
+	margin-bottom: 1rem;
+	padding: 0 .2rem;
+	font-size: 2.2rem;
+	line-height: 2.6rem;
+	font-weight: bold;
+	background-color: $color-2;
+	color: $color-1;
+}
