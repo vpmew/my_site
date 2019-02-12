@@ -1,3 +1,5 @@
-.main-content {
-    margin-bottom: 1.5rem;
+@media (min-width: $s-width) {
+    .main-content {
+        margin-bottom: 1.5rem;
+    }
 }

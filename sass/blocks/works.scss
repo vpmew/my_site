@@ -2,25 +2,41 @@
     display: flex;
     flex-flow: column;
     height: 100%;
-    padding-top: 15%;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: $s-width) {
+	.works {
+        margin-bottom: 0;
+        padding-top: 20%;
+	}
 }
 
 @media (min-width: $l-width) {
 	.works {
-		margin-left: -20%;
+		margin-left: -10%;
 	}
 }
 
 .works__title {
     margin: 0;
-	margin-bottom: 2.2rem;
-	font-size: 1.6rem;
-	line-height: 2rem;
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+}
+
+@media (min-width: $s-width) {
+	.works__title {
+        margin-bottom: 1.5rem;
+        font-size: 1.4rem;
+	    line-height: 1.8rem;
+	}
 }
 
 @media (min-width: $m-width) {
 	.works__title {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 }
 
@@ -29,7 +45,7 @@
 }
 
 .works__item {
-    margin-bottom: 1.8rem;
+    margin-bottom: .8rem;
     position: relative;
 
     &::before {
@@ -47,6 +63,12 @@
             left: -.9rem;
         }
     }
+}
+
+@media (min-width: $s-width) {
+	.works__item {
+		margin-bottom: 1.2rem;
+	}
 }
 
 .works__item a {
@@ -78,6 +100,6 @@
 
 @media (min-width: $m-width) {
 	.works__item a {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 }

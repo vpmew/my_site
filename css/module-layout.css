@@ -61,3 +61,14 @@
 .col-11 {
   flex-basis: calc( var(--columnWidth) * 11 );    
 }
+
+
+.xs-col-12 {
+  flex-basis: calc( var(--columnWidth) * 12 );    
+}
+
+@media (min-width: 576px) {
+  .s-col-6 {
+    flex-basis: calc( var(--columnWidth) * 6 );    
+  }
+}

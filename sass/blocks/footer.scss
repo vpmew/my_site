@@ -2,6 +2,7 @@
     position: relative;
     padding-top: 1rem;
     text-align: center;
+    margin-top: -1rem;
 
     &::before {
         content: '';
@@ -14,17 +15,12 @@
     }
 }
 
-// @media (min-width: $tablet-width) {
-// 	.page-footer {
-// 		width: $tablet-width;
-// 		padding: 20px 60px;
-// 	}
-// }
+.page-footer__copyright {
+    font-size: .8rem;
+}
 
-
-// @media (min-width: $desktop-width) {
-// 	.page-footer {
-// 		width: $desktop-width;
-// 		padding: 40px 120px;
-// 	}
-// }
+@media (min-width: $s-width) {
+    .page-footer {
+        margin-top: 0;
+    }
+}
